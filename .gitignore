@@ -1,0 +1,23 @@
+# Python相关
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# 项目相关
+*.log
+temp_docs/
+backend.log
+frontend.log
+celery.log
+/var/log/rag/
+*.pem  # 排除证书/密码文件
+*.env  # 排除环境变量文件（含密码）
+.DS_Store
