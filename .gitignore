@@ -21,3 +21,20 @@ celery.log
 *.pem  # 排除证书/密码文件
 *.env  # 排除环境变量文件（含密码）
 .DS_Store
+
+# Milvus相关（如果有）
+volumes/milvus/
+milvus/
+
+# MongoDB相关（核心，排除整个mongo数据目录）
+volumes/mongo/
+*.wt
+WiredTiger*
+journal/
+diagnostic.data/
+
+# 服务器日志/临时文件
+/var/log/rag/
+temp_docs/
+*.log
+*.pid
